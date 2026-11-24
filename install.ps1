@@ -456,3 +456,5 @@ Write-Host "  @graphify query `"what connects auth to the database?`""
 Write-Host ""
 Write-Host "The CLI command is 'graphify' when installed (no leading slash)."
 Write-Host "Source and license: https://github.com/$Repo"
+
+exit 0

@@ -177,6 +177,7 @@ $Cli = Invoke-GraphifyProbe $Python $PackageVersion
 
 if ($Cli) {
     Write-Host "OK  graphify CLI: $Cli" -ForegroundColor Green
+    exit 0
 }
 elseif ($RequireCli) {
     Write-Fail "The graphify CLI was not found."
@@ -186,4 +187,5 @@ elseif ($RequireCli) {
 else {
     Write-Host "WARN The graphify CLI was not found. The skill is installed and will prompt you if needed." -ForegroundColor Yellow
     Write-Host "      Install it with: python -m pip install --user graphifyy" -ForegroundColor Yellow
+    exit 0
 }
