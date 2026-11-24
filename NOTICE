@@ -1,0 +1,33 @@
+opencode-graphify-skill
+Copyright (c) 2026 Máximo Gomez Pessoa (MaxiGP0)
+
+This repository contains installers and verifiers only. It does not
+redistribute the Graphify skill or the graphifyy Python package.
+
+At install time, the installer downloads the skill from the upstream
+repository:
+
+  https://github.com/Graphify-Labs/graphify
+  (the upstream README also references https://github.com/safishamsi/graphify)
+
+The default ref is `main`, which is the branch that still contains the
+single-file skill this project adapts:
+
+  skills/graphify/skill.md
+
+That branch declares MIT in pyproject.toml:
+
+  license = { text = "MIT" }
+
+The `main` branch has no standalone LICENSE file, so the full MIT text is not
+available from that branch.
+
+Upstream's current default branch (v8) has a different layout and licensing:
+Apache-2.0 in LICENSE, with pre-relicensing contributions under MIT in
+LICENSE-MIT and attribution in NOTICE. The graphifyy package is installed
+separately from PyPI; the 0.9.119 release reports
+License-Expression: Apache-2.0.
+
+Graphify is maintained upstream by Graphify Labs. LICENSE-MIT credits Safi
+Shamsi and the Graphify contributors. This project is unofficial and is not
+affiliated with the upstream authors.
