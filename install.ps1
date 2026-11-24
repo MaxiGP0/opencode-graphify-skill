@@ -245,7 +245,8 @@ Upstream skill: https://github.com/Graphify-Labs/graphify/blob/main/skills/graph
 MIT-declared upstream (main branch). This OpenCode adaptation is unofficial.
 '@
 
-    return ($Header + "`n" + $Body.TrimEnd() + "`n" + $Footer + "`n")
+    $Adapted = $Header + "`n" + $Body.TrimEnd() + "`n" + $Footer + "`n"
+    return ($Adapted -replace "`r`n", "`n")
 }
 
 function Get-PythonCommand {
